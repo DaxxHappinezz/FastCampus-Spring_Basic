@@ -1,6 +1,7 @@
 package com.fastcampus.ch4.domain;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Objects;
 
 public class BoardDto {
@@ -10,8 +11,8 @@ public class BoardDto {
     private String writer;
     private int view_cnt;
     private int comment_cnt;
-    private LocalDateTime reg_date;
-    private LocalDateTime up_date;
+    private Date reg_date;
+    private Date up_date;
 
     public BoardDto() {}
     public BoardDto(String title, String content, String writer) {
@@ -95,19 +96,19 @@ public class BoardDto {
         this.comment_cnt = comment_cnt;
     }
 
-    public LocalDateTime getReg_date() {
+    public Date getReg_date() {
         return reg_date;
     }
 
-    public void setReg_date(LocalDateTime reg_date) {
+    public void setReg_date(Date reg_date) {
         this.reg_date = reg_date;
     }
 
-    public LocalDateTime getUp_date() {
+    public Date getUp_date() {
         return up_date;
     }
 
-    public void setUp_date(LocalDateTime up_date) {
+    public void setUp_date(Date up_date) {
         this.up_date = up_date;
     }
 }
